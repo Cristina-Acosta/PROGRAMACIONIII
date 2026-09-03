@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiAgridulce</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Agridulce</h1>
+        <p>Experiencias Agridulces</p>
+        <nav>
+            <ul>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="mapa.html">Donde estamos?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="nosotros">
+            <h2>Nosotros</h2>
+            <p>Somos una experiencia que aborda cada plato principal con una vuelta dulce en el paladar, cuidando el sabor original de cada ingrediente hasta que esté en tu boca.</p>
+        </section>
+        <section  id="menu" >
+            <h2>Menú</h2>
+            <article>
+                <h3>Pastel de membrillo, peras y roquefort</h3>
+                <p>Láminas de membrillos y peras asadas, cebolla caramelizada, con roquefort y nueces trozadas, provoleta gratinada</p>
+            </article>
+            <article>
+                <h3>Pizza Arándanos</h3>
+                <p> Pizza muzzarella con salsa de arándanos</p>
+            </article>
+            <article>
+                <h3>Papas y berenjenas</h3>
+                <p>Papas fritas y berenjenas apanadas fritas con hilos de miel y dip de mostaza y miel</p>
+            </article>
+        </section>
+        <section id="reservas">
+
+            <h2>Reservas</h2>
+            <form action="">
+            <fieldset>
+                <legend>Hacé tu reserva</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="'Pepe Acosta'" required>
+                <br><label for="numero">Contacto</label>
+                <input type="tel" id="numero" name="numero" placeholder="2611000000" required>
+                <br><label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha" required>
+                <br><label for="cantidad">Cantidad</label>
+                <input type="number" name="cantidad" id="cantidad" min="1" required>
+                <br><label for="comentario">Comentario</label>
+                <br><textarea name="comentario" id="comentario" placeholder="Escriba aquí..."></textarea>
+            </fieldset>
+            </form>
+        </section>
+        <section id="donde">
+            <h2>Donde estamos?</h2>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Acosta Cristina - Todas las recetas reservadas</p>
+
+    </footer>
+</body>
+</html>
