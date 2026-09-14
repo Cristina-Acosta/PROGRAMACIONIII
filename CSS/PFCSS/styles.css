@@ -122,3 +122,19 @@ main{
   margin-bottom: 6rem;
   text-align: center;
 }
+/*FOOTER*/
+footer{
+  background-color: var(--bgColorOscuro);
+  position: fixed;
+  color: var(--colorTexto);
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__description{
+  font-size: 1rem;
+  text-align: center;
+}
