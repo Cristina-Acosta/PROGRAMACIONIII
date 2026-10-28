@@ -4,7 +4,7 @@ for (let i=0; i<5;i++){
     let entrada= prompt("Ingrese palabra n° "+(i+1)+": ");
     palabras.push(entrada);
 }
-console.log(palabras);
+console.log([...palabras]);
 //PUNTO 2
 //● Agregar una palabra al inicio del array.
 palabras.unshift("1° palabra")
