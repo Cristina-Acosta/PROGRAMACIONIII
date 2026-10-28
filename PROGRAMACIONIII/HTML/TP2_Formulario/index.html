@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <header>
+        <section>
+            <h1>FORMULARIO DE CONTACTO</h1>
+        </section>
+</header>
+
+<main>
+    <section>
+        <form>
+
+            <!-- Nombre -->
+            <label for="Nombre">Nombre:</label>
+            <input 
+                type="text" 
+                name="Nombre" 
+                id="Nombre"
+                minlength="3" 
+                required 
+                placeholder="Ej: Juan Pérez"
+            >
+
+            <!-- Email -->
+            <label for="Email">Email:</label>
+            <input 
+                type="email" 
+                name="Email" 
+                id="Email"
+                required 
+                placeholder="Ej: correo@ejemplo.com"
+            >
+
+            <!-- Contraseña -->
+            <label for="Password">Contraseña:</label>
+            <input 
+                type="password" 
+                name="Password" 
+                id="Password"
+                minlength="8" 
+                required 
+                placeholder="Mínimo 8 caracteres"
+            >
+
+            <!-- Género -->
+            <p>Género:</p>
+
+            <input type="radio" name="Genero" id="Masculino" value="Masculino">
+            <label for="Masculino">Masculino</label>
+
+            <input type="radio" name="Genero" id="Femenino" value="Femenino">
+            <label for="Femenino">Femenino</label>
+
+            <input type="radio" name="Genero" id="Otro" value="Otro">
+            <label for="Otro">Otro</label>
+
+            <!-- Intereses -->
+            <p>Intereses:</p>
+
+            <input type="checkbox" name="Intereses" id="Musica" value="Musica">
+            <label for="Musica">Música</label>
+
+            <input type="checkbox" name="Intereses" id="Deporte" value="Deporte">
+            <label for="Deporte">Deporte</label>
+
+            <input type="checkbox" name="Intereses" id="Lectura" value="Lectura">
+            <label for="Lectura">Lectura</label>
+
+            <!-- Comentarios -->
+            <label for="Comentarios">Comentarios adicionales:</label>
+            <textarea 
+                name="Comentarios" 
+                id="Comentarios" 
+                placeholder="Escribí tus comentarios..."
+            ></textarea>
+
+            <!-- País -->
+            <label for="Pais">País:</label>
+            <select name="Pais" id="Pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+            </select>
+
+            <!-- Botón -->
+            <input type="submit" value="Enviar">
+
+        </form>
+    </section>
+</main>
+
+<footer>        
+    <p>Derechos Reservados © Cristina Acosta 2026</p>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+
+:root {
+    --color-fondo: #f5f0ff;
+    --color-texto: #333333;
+    --color-acento: #8a5cf5;
+}
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+#parrafo-id {
+    color: purple;
+    font-weight: bold;
+}
+.parrafo-clase {
+    color: blue;
+    background-color: lightblue;
+    padding: 10px;
+}
+section > p {
+    border-left: 5px solid orange;
+    padding-left: 10px;
+}
+
+.titulo-sombra {
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px gray;
+}
+.texto-espaciado {
+    line-height: 2;
+    letter-spacing: 4px;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+
+.tarjeta {
+    width: 300px;
+
+    border: 3px solid var(--color-acento);
+
+    padding: 20px;
+
+    margin: 20px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 5px 5px 15px gray;
+
+    box-sizing: border-box;
+}
+.cuadrado {
+    width: 80px;
+    height: 80px;
+
+    background-color: var(--color-acento);
+
+    margin-bottom: 15px;
+}
+
+
+.block .tarjeta-galeria {
+    display: block;
+}
+
+.inline .tarjeta-galeria {
+    display: inline;
+}
+
+.inline-block .tarjeta-galeria {
+    display: inline-block;
+}
+
+.tarjeta-galeria {
+    width: 150px;
+    height: 100px;
+
+    background-color: white;
+
+    border: 2px solid var(--color-acento);
+
+    margin: 10px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+.boton-none {
+    display: none;
+}
+.boton-hidden {
+    visibility: hidden;
+}
+.tarjeta-perfil {
+    background-color: var(--color-fondo);
+
+    color: var(--color-texto);
+
+    border: 3px solid var(--color-acento);
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    max-width: 400px;
+}
