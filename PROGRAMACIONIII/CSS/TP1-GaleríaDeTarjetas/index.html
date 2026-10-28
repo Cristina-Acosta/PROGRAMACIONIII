@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GaleríadeTarjetas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Introducción a CSS</h1>
+
+        <p>
+            CSS significa Cascading Style Sheets (Hojas de Estilo en Cascada).
+            Sirve para darle diseño y presentación a una página web, permitiendo
+            modificar colores, tamaños, espacios, fuentes y distribución de los elementos.
+        </p>
+    </header>
+    <main>
+        <section>
+            <h2>2. Selectores en CSS</h2>
+            <p id="parrafo-id">
+                Este párrafo tiene un selector por ID.
+            </p>
+            <p class="parrafo-clase">
+                Este párrafo tiene un selector por clase.
+            </p>
+            <p>
+                Este párrafo utiliza un selector por etiqueta.
+            </p>
+        </section>
+        <section>
+            <h2>3. Modificación de Texto</h2>
+            <h3 class="titulo-sombra">
+                Título con sombra y mayúsculas
+            </h3>
+            <p class="texto-espaciado">
+                Este párrafo tiene un interlineado amplio y mayor espacio entre las letras.
+            </p>
+
+            <blockquote>
+                "CSS permite separar el contenido de una página de su presentación visual."
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>4. Modelo de Caja</h2>
+
+            <div class="tarjeta">
+                <div class="cuadrado"></div>
+
+                <h3>Tarjeta de ejemplo</h3>
+
+                <p>
+                    Esta tarjeta utiliza border, padding, margin, background-color,
+                    border-radius y box-shadow.
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2>5. Display y Visibility</h2>
+
+            <h3>display: block</h3>
+
+            <div class="galeria block">
+                <div class="tarjeta-galeria">Tarjeta 1</div>
+                <div class="tarjeta-galeria">Tarjeta 2</div>
+                <div class="tarjeta-galeria">Tarjeta 3</div>
+            </div>
+            <h3>display: inline</h3>
+
+            <div class="galeria inline">
+                <div class="tarjeta-galeria">Tarjeta 1</div>
+                <div class="tarjeta-galeria">Tarjeta 2</div>
+                <div class="tarjeta-galeria">Tarjeta 3</div>
+            </div>
+            <h3>display: inline-block</h3>
+            <div class="galeria inline-block">
+                <div class="tarjeta-galeria">Tarjeta 1</div>
+                <div class="tarjeta-galeria">Tarjeta 2</div>
+                <div class="tarjeta-galeria">Tarjeta 3</div>
+            </div>
+
+            <h3>Visibility</h3>
+
+            <button class="boton-none">
+                display: none
+            </button>
+
+            <button class="boton-hidden">
+                visibility: hidden
+            </button>
+
+            <p>
+                La diferencia es que <strong>display: none</strong> elimina el elemento
+                del espacio de la página, mientras que <strong>visibility: hidden</strong>
+                lo oculta pero mantiene su espacio.
+            </p>
+        </section>
+        <section>
+            <h2>6. Variables CSS</h2>
+
+            <div class="tarjeta-perfil">
+                <h3>Tarjeta de perfil</h3>
+
+                <p>
+                    Esta tarjeta utiliza variables CSS definidas en :root
+                    para controlar sus colores.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Acosta Cristina</p>
+    </footer>
+
+</body>
+</html>

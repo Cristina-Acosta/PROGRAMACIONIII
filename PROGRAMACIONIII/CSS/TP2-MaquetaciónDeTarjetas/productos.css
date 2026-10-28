@@ -1,0 +1,82 @@
+:root {
+    --color-fondo: #f5f0e8;
+    --color-texto: #333333;
+    --color-acento: #8b5e3c;
+}
+
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+
+    font-family: Arial, sans-serif;
+
+    text-align: center;
+
+    margin: 0;
+    padding: 30px;
+}
+
+
+.galeria {
+    margin-top: 30px;
+}
+
+
+.tarjeta {
+    display: inline-block;
+
+    width: 280px;
+
+    background-color: white;
+
+    border: 2px solid var(--color-acento);
+
+    padding: 20px;
+
+    margin: 15px;
+
+    border-radius: 15px;
+
+    box-shadow: 5px 5px 15px gray;
+
+    vertical-align: top;
+}
+
+
+.tarjeta img {
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+.tarjeta h3 {
+    color: var(--color-acento);
+
+    text-transform: uppercase;
+}
+
+.tarjeta p {
+    line-height: 1.5;
+}
+
+.tarjeta button {
+    background-color: var(--color-acento);
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.tarjeta button:hover {
+    background-color: #d49a6a;
+}
