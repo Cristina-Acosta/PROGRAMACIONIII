@@ -1,7 +1,12 @@
-//Ejercicio 1: Invertir un array sin .reverse().
-const palabras=[1,2,3,4];
-const palabrasInvertidas=[];
-for (let i=0;i <palabras.length;i++){
-    palabrasInvertidas.unshift(palabras[i])
+//Ejercicio 1: Iteración inversa.
+
+const numeros = [1, 2, 3, 4];
+const numerosInvertidos = [];
+
+// Recorremos desde el último índice (numeros.length - 1) hasta el primero (0)
+for (let i = numeros.length - 1; i >= 0; i--) {
+  numerosInvertidos.push(numeros[i]);
 }
-console.log(palabrasInvertidas)
+
+console.log("Array original:", numeros);
+console.log("Array invertido:", numerosInvertidos);
