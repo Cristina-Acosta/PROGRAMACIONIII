@@ -32,3 +32,24 @@ for (let i = 0; i < palabras.length; i++) {
     console.log(`>> "${palabras[i]}": NO PALÍNDROMO.`);
   }
 }
+//Ejercicio3: Contar vocales.
+const texto= "SOMOS geniales";
+const vocales="aeiou";
+let contador=0;
+for (i=0;i<texto.length;i++){
+  if(vocales.includes(texto[i].toLowerCase())){
+    contador++;
+  }
+}
+console.log(texto," tiene: ",contador," vocales.");
+//Ejercicio 4: Rotación de array
+const numeros = [10, 20, 30, 40];
+
+// 1. Extraemos el último elemento con .pop() (devuelve 40)
+const ultimoElemento = numeros.pop(); 
+
+// 2. Insertamos ese elemento al principio del arreglo con .unshift()
+numeros.unshift(ultimoElemento);
+
+console.log("Array rotado a la derecha:", numeros);
+// Resultado: [40, 10, 20, 30]
