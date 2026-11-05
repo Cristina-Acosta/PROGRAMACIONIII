@@ -43,13 +43,93 @@ for (i=0;i<texto.length;i++){
 }
 console.log(texto," tiene: ",contador," vocales.");
 //Ejercicio 4: Rotación de array
-const numeros = [10, 20, 30, 40];
+const numeros1 = [10, 20, 30, 40];
 
 // 1. Extraemos el último elemento con .pop() (devuelve 40)
-const ultimoElemento = numeros.pop(); 
+const ultimoElemento = numeros1.pop(); 
 
 // 2. Insertamos ese elemento al principio del arreglo con .unshift()
-numeros.unshift(ultimoElemento);
+numeros1.unshift(ultimoElemento);
 
-console.log("Array rotado a la derecha:", numeros);
-// Resultado: [40, 10, 20, 30]
+console.log("Array rotado a la derecha:", numeros1);
+//Ejercicio 5: Ordenar números sin .sort()
+const numerosDesordenados = [5, 2, 9, 1];
+const arrayOrdenado = [...numerosDesordenados]; 
+// Creamos copia para no mutar la fuente
+
+for (let i = 0; i < arrayOrdenado.length; i++) {
+  for (let j = 0; j < arrayOrdenado.length - 1 - i; j++) {
+    if (arrayOrdenado[j] > arrayOrdenado[j + 1]) {
+      // Intercambio mediante variable auxiliar
+      let aux = arrayOrdenado[j];
+      arrayOrdenado[j] = arrayOrdenado[j + 1];
+      arrayOrdenado[j + 1] = aux;
+    }
+  }
+}
+
+console.log("Original:", numerosDesordenados);
+console.log("Ordenado de menor a mayor:", arrayOrdenado);
+
+// Ejercicio 6: Reemplazo de palabras
+const fraseOriginal = "me gusta programar en Java";
+const palabraAObjetivo = "Java";
+const palabraReemplazo = "JavaScript";
+
+const palabrasFrase = fraseOriginal.split(" ");
+
+for (let i = 0; i < palabrasFrase.length; i++) {
+  if (palabrasFrase[i] === palabraAObjetivo) {
+    palabrasFrase[i] = palabraReemplazo;
+  }
+}
+
+const fraseModificada = palabrasFrase.join(" ");
+
+console.log("Frase original:", fraseOriginal);
+console.log("Frase modificada:", fraseModificada);
+// Ejercicio 7: Números únicos (sin usar Set)
+const numerosRepetidos = [1, 2, 2, 3, 4, 4, 5];
+const numerosUnicos = [];
+
+for (let i = 0; i < numerosRepetidos.length; i++) {
+  if (!numerosUnicos.includes(numerosRepetidos[i])) {
+    numerosUnicos.push(numerosRepetidos[i]);
+  }
+}
+
+console.log("Original con duplicados:", numerosRepetidos);
+console.log("Arreglo con valores únicos:", numerosUnicos);
+// Ejercicio 8: Intersección de arrays
+const array1 = [1, 2, 3, 4];
+const array2 = [3, 4, 5, 6];
+const interseccion = [];
+
+for (let i = 0; i < array1.length; i++) {
+  let elementoActual = array1[i];
+  if (array2.includes(elementoActual) && !interseccion.includes(elementoActual)) {
+    interseccion.push(elementoActual);
+  }
+}
+
+console.log("Array 1:", array1);
+console.log("Array 2:", array2);
+console.log("Intersección (elementos comunes):", interseccion);
+
+// Ejercicio 9: Contar palabras
+const textoEjemplo = "hola mundo hola javascript";
+const palabrasContadas = textoEjemplo.split(" ");
+const frecuenciaPalabras = {};
+
+for (let i = 0; i < palabrasContadas.length; i++) {
+  let palabra = palabrasContadas[i].toLowerCase();
+  
+  if (frecuenciaPalabras[palabra]) {
+    frecuenciaPalabras[palabra] += 1;
+  } else {
+    frecuenciaPalabras[palabra] = 1;
+  }
+}
+
+console.log("Texto analizado:", textoEjemplo);
+console.log("Frecuencia de palabras:", frecuenciaPalabras);
