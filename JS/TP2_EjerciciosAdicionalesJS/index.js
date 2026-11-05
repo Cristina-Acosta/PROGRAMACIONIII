@@ -133,3 +133,25 @@ for (let i = 0; i < palabrasContadas.length; i++) {
 
 console.log("Texto analizado:", textoEjemplo);
 console.log("Frecuencia de palabras:", frecuenciaPalabras);
+
+// Ejercicio 10: Matriz transpuesta
+const matrizOriginal = [
+  [1, 2, 3],
+  [4, 5, 6]
+];
+
+const filasOriginales = matrizOriginal.length;
+const columnasOriginales = matrizOriginal[0].length;
+
+const matrizTranspuesta = [];
+
+for (let col = 0; col < columnasOriginales; col++) {
+  const nuevaFila = [];
+  for (let fila = 0; fila < filasOriginales; fila++) {
+    nuevaFila.push(matrizOriginal[fila][col]);
+  }
+  matrizTranspuesta.push(nuevaFila);
+}
+
+console.log("Matriz Original:", matrizOriginal);
+console.log("Matriz Transpuesta:", matrizTranspuesta);
